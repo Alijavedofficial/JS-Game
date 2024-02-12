@@ -1,0 +1,49 @@
+<head>
+    <style>
+        *{
+           box-sizing: border-box;
+           font-family: 'Press Start 2P', cursive;
+        }
+        #displayText{
+            color: black;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+<title>Fighting Game</title>
+    
+</head>
+
+<body>
+
+    
+    <!--red container div-->
+<div style="position: relative;display: inline-block;">
+    <!-- smaller red container div-->
+    <div style="position: absolute;display: flex;width: 100%;align-items: center;padding:5px;">
+        <!--player health-->
+        <div style="position: relative;height: 35px;width: 100%;display: flex;justify-content: flex-end ;">
+            <div  style="background-color: red;height: 35px;width: 100%;border-radius: 10px;border: 2px solid black;border-bottom-right-radius: 100px;border-top-left-radius: 100px;"></div>
+            <div id="playerhealth" style="position: absolute;background: greenyellow;top: 0;bottom: 0;right: 0;width: 100%;border-radius: 3px;border: 2px solid black;border-bottom-right-radius: 100px;border-top-left-radius: 100px;"></div>
+          </div>
+        <!--Timer-->
+        <div id="timer" style="background-color: black;width: 110px;height: 80px;flex-shrink: 0;display:flex ;align-items:center;justify-content: center;border-radius: 50px;color: greenyellow;font-size: 34px;border: 1px solid white;">
+        10</div>
+
+        <!--enemy health-->
+        <div style="position: relative;height: 35px;width: 100%;">
+        <div  style="background-color: red;height: 35px;border-radius: 10px;border: 2px solid black;border-bottom-left-radius: 100px;border-top-right-radius: 100px;"></div>
+        <div id="enemyhealth" style="position: absolute;background: greenyellow;top: 0;bottom: 0;right: 0;left: 0;border-radius: 3px;border: 2px solid black;border-bottom-left-radius: 100px;border-top-right-radius: 100px;"></div>
+      </div>
+    </div>
+    <div id="displayText"  style="display: none;color: rgb(0, 0, 0) ;position: absolute;align-items: center;justify-content: center;top: 0;left: 0;right: 0;bottom: 0;font-size: 50px;text-shadow: 2px 2px 4px  rgb(147, 255, 47);">Tie</div>
+    <canvas></canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="utlix.js"></script>
+<script src="/classes.js"></script>
+<script src="/index.js"></script>
+
+
+</body>
